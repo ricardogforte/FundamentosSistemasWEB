@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetClean - Acessórios</title>
+  <meta name="description" content="Acessórios para cães: camas, brinquedos e mais na PetClean.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <a class="skip-link btn btn-warning" href="#conteudo-principal">Pular para o conteúdo</a>
+
+  <header>
+    <div class="bg-dark text-white py-1">
+      <div class="container d-flex justify-content-end" id="acessibilidade-toolbar">
+        <span class="me-2 small d-none d-sm-inline">Acessibilidade:</span>
+        <button type="button" id="btn-fonte-menos" class="btn btn-sm btn-outline-light" aria-label="Diminuir tamanho da fonte">A-</button>
+        <button type="button" id="btn-fonte-mais" class="btn btn-sm btn-outline-light" aria-label="Aumentar tamanho da fonte">A+</button>
+        <button type="button" id="btn-alto-contraste" class="btn btn-sm btn-outline-light" aria-pressed="false" aria-label="Ativar ou desativar modo de alto contraste">Alto contraste</button>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-petclean">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">PetClean 🐾</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir/fechar menu de navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="acessorios.html">Acessórios</a></li>
+            <li class="nav-item"><a class="nav-link" href="racoes.html">Rações</a></li>
+            <li class="nav-item"><a class="nav-link" href="higiene.html">Higiene &amp; Limpeza</a></li>
+            <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold" href="cadastro.html">Cadastro &amp; Agendamento</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo-principal" class="container py-5">
+    <h1>Acessórios para Cães</h1>
+    <p class="lead">Conforto, diversão e estilo para o seu melhor amigo!</p>
+
+    <div class="row g-4 mt-2">
+      <div class="col-md-6">
+        <div class="card card-produto h-100 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=600" class="card-img-top" alt="Cama confortável para cão tamanho médio">
+          <div class="card-body">
+            <h2 class="h5 card-title">Cama para Cão — Tamanho M</h2>
+            <p class="card-text">
+              Cama ortopédica para cães de médio porte, com enchimento de espuma de
+              alta densidade. Proporciona conforto e suporte para as articulações.
+              Capa removível e lavável. Dimensões: 70cm x 50cm.
+            </p>
+            <p class="fw-bold">Preço: R$ 89,90</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card card-produto h-100 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1601758125946-6ec2ef64daf8?w=600" class="card-img-top" alt="Brinquedo de corda colorido para cães">
+          <div class="card-body">
+            <h2 class="h5 card-title">Brinquedo de Corda Colorido</h2>
+            <p class="card-text">
+              Brinquedo de corda trançada em algodão natural, ideal para brincadeiras
+              de cabo de guerra e estimulação mental. Auxilia na higiene dentária e
+              fortalece o vínculo entre tutor e pet. Disponível nas cores azul, verde
+              e vermelho. Comprimento: 40cm.
+            </p>
+            <p class="fw-bold">Preço: R$ 24,90</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="py-4 mt-5">
+    <div class="container">
+      <h3 class="h5">PetClean</h3>
+      <address class="mb-2">
+        Rua dos Animais, 123 — Bairro Jardim Verde — Porto Alegre, RS<br>
+        Telefone: (51) 99999-0000<br>
+        E-mail: contato@petclean.com.br
+      </address>
+      <nav aria-label="Links de rodapé">
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link px-2" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="acessorios.html">Acessórios</a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="racoes.html">Rações</a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="higiene.html">Higiene &amp; Limpeza</a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="servicos.html">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="cadastro.html">Cadastro &amp; Agendamento</a></li>
+        </ul>
+      </nav>
+      <p class="mb-0 small">
+        &copy; <span id="ano-atual">2026</span> PetClean. Todos os direitos reservados.<br>
+        Projeto acadêmico — Fundamentos de Sistemas Web — PUC RS.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

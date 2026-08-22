@@ -1,0 +1,172 @@
+/* =========================================================================
+   PetClean — Fase 2
+   Folha de estilo customizada (usada em conjunto com o Bootstrap 5)
+   ========================================================================= */
+
+:root {
+  --petclean-primary: #2f7a4f;   /* verde principal da marca */
+  --petclean-dark: #1e5236;
+  --petclean-accent: #ffb703;    /* amarelo de destaque */
+  --petclean-bg: #f7f9f7;
+}
+
+body {
+  background-color: var(--petclean-bg);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/* ---------- Link "pular para o conteúdo" (acessibilidade) --------------- */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 1050;
+}
+
+.skip-link:focus {
+  left: 0.5rem;
+  top: 0.5rem;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: var(--petclean-dark);
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0 3px var(--petclean-accent);
+}
+
+/* ---------- Cabeçalho / navbar ------------------------------------------ */
+.navbar-brand {
+  font-weight: 700;
+}
+
+.navbar-petclean {
+  background-color: var(--petclean-primary) !important;
+}
+
+.navbar-petclean .nav-link {
+  color: #eef7f0 !important;
+}
+
+.navbar-petclean .nav-link.active,
+.navbar-petclean .nav-link:hover {
+  color: #ffffff !important;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* ---------- Cartões de produtos/serviços -------------------------------- */
+.card-produto img,
+.card-servico img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-produto,
+.card-servico {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card-produto:hover,
+.card-servico:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.15);
+}
+
+.badge-telebusca {
+  font-size: 0.85rem;
+}
+
+/* ---------- Carrossel da home -------------------------------------------- */
+.carousel-item img {
+  height: 420px;
+  object-fit: cover;
+  filter: brightness(0.65);
+}
+
+.carousel-caption h2,
+.carousel-caption p {
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+/* ---------- Relógio / saudação dinâmica --------------------------------- */
+#saudacao-dinamica {
+  font-weight: 600;
+  color: var(--petclean-dark);
+}
+
+/* ---------- Formulário de cadastro --------------------------------------- */
+.form-section-title {
+  border-left: 5px solid var(--petclean-primary);
+  padding-left: 0.75rem;
+  margin-top: 2rem;
+}
+
+#resumo-agendamento {
+  background-color: #eef7f0;
+  border: 1px dashed var(--petclean-primary);
+}
+
+/* ---------- Modo de Alto Contraste (acessibilidade) ---------------------- */
+body.alto-contraste {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+body.alto-contraste a,
+body.alto-contraste .nav-link {
+  color: #ffe066 !important;
+}
+
+body.alto-contraste .navbar-petclean,
+body.alto-contraste footer,
+body.alto-contraste .card,
+body.alto-contraste .bg-light {
+  background-color: #000 !important;
+  border-color: #ffe066 !important;
+}
+
+body.alto-contraste .card {
+  border: 1px solid #ffe066 !important;
+}
+
+body.alto-contraste .text-muted,
+body.alto-contraste .form-text {
+  color: #dddddd !important;
+}
+
+/* Tamanhos de fonte controlados via JS (acessibilidade visual) */
+body.fonte-media {
+  font-size: 1.125rem;
+}
+
+body.fonte-grande {
+  font-size: 1.3rem;
+}
+
+footer {
+  background-color: var(--petclean-dark);
+  color: #eef7f0;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+/* Botões de acessibilidade fixos no canto */
+#acessibilidade-toolbar {
+  gap: 0.35rem;
+}
+
+#acessibilidade-toolbar .btn {
+  font-weight: 600;
+}
